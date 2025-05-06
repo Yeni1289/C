@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL)); // Inicializa la semilla aleatoria con el tiempo actual
+    int numero = rand() % 100 + 1; // Genera un número entre 1 y 100
+    printf("Número aleatorio generado: %d\n", numero);
+    return 0;
+}
